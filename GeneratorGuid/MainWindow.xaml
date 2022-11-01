@@ -1,0 +1,15 @@
+﻿<Window x:Class="GeneratorGuid.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GeneratorGuid"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="428" Width="417" ResizeMode="NoResize" Background="Black">
+    <Grid OpacityMask="#FF4E2F96" Background="#FF07090C">
+        <TextBox x:Name="TextBox1" Margin="39,21,39,0" TextWrapping="Wrap" BorderBrush="White" Background="Black" FontFamily="Fira Code Medium" TextAlignment="Center" FontSize="14" Height="281" VerticalAlignment="Top" Foreground="White"/>
+        <Button Content="Генерировать" Margin="39,344,0,0" Click="Button_Click" Background="#FF333333" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Width="89" Foreground="White"/>
+        <Button Content="Сохранить" Margin="0,344,0,0" Click="Button_Click_2" Background="#FF333333" Height="30" VerticalAlignment="Top" HorizontalAlignment="Center" Width="89" Foreground="White"/>
+        <Button Content="Стоп" Height="30" Margin="0,344,39,0" VerticalAlignment="Top" Click="Button_Click_1" Background="#FFCE0000" HorizontalAlignment="Right" Width="89"/>
+    </Grid>
+</Window>
