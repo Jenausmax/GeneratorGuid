@@ -5,11 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GeneratorGuid"
         mc:Ignorable="d"
-        Title="MainWindow" Height="428" Width="417" ResizeMode="NoResize" Background="Black">
+        Title="MainWindow" Height="426" Width="526" ResizeMode="NoResize" Background="Black">
     <Grid OpacityMask="#FF4E2F96" Background="#FF07090C">
-        <TextBox x:Name="TextBox1" Margin="39,21,39,0" TextWrapping="Wrap" BorderBrush="White" Background="Black" FontFamily="Fira Code Medium" TextAlignment="Center" FontSize="14" Height="281" VerticalAlignment="Top" Foreground="White"/>
-        <Button Content="Генерировать" Margin="39,344,0,0" Click="Button_Click" Background="#FF333333" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Width="89" Foreground="White"/>
-        <Button Content="Сохранить" Margin="0,344,0,0" Click="Button_Click_2" Background="#FF333333" Height="30" VerticalAlignment="Top" HorizontalAlignment="Center" Width="89" Foreground="White"/>
-        <Button Content="Стоп" Height="30" Margin="0,344,39,0" VerticalAlignment="Top" Click="Button_Click_1" Background="#FFCE0000" HorizontalAlignment="Right" Width="89"/>
+        <TextBox x:Name="TextBox1" Margin="162,21,39,0" TextWrapping="Wrap" BorderBrush="White" Background="Black" FontFamily="Fira Code Medium" TextAlignment="Center" FontSize="10" Height="281" VerticalAlignment="Top" Foreground="White"/>
+        <Button Content="Генерировать" Margin="36,29,0,0" Click="Button_Click" Background="#FF333333" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Width="89" Foreground="White"/>
+        <Button Content="Сохранить" Margin="36,233,0,0" Click="Button_Click_2" Background="#FF333333" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Width="89" Foreground="White"/>
+        <Button Content="Стоп" Height="30" Margin="36,78,0,0" VerticalAlignment="Top" Click="Button_Click_1" Background="#FFCE0000" HorizontalAlignment="Left" Width="89"/>
+        <Button Content="Удалить" Margin="36,276,0,0" Click="Button_Click_3" Background="#FF333333" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Width="89" Foreground="White"/>
+        <Label Content="Работа с файлом" HorizontalAlignment="Left" Height="26" Margin="28,0,0,0" VerticalAlignment="Center" Width="121" Foreground="White"/>
+        <Button Content="Очистить" Height="30" Margin="36,129,0,0" VerticalAlignment="Top" Click="Button_Click_Clear" Background="#FFCE0000" HorizontalAlignment="Left" Width="89"/>
+        <Label x:Name="Lab" HorizontalAlignment="Left" Height="28" Margin="303,325,0,0" VerticalAlignment="Top" Width="184" Foreground="White"/>
     </Grid>
 </Window>

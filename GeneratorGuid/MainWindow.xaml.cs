@@ -47,7 +47,7 @@ public partial class MainWindow : Window
     private void Button_Click_2(object sender, RoutedEventArgs e)
     {
         
-        var directory = $"{DateTime.Now.ToString("yy-MM-dd")}";
+        var directory = $"{DateTime.Now.ToString("yy-MM-dd")}-gen";
         var file = $"{_guidCollections.Count}-count_{DateTime.Now.ToString("yy-MM-dd")}_{Guid.NewGuid().ToString("N")}.txt";
 
         if (!Directory.Exists(directory))
@@ -65,6 +65,29 @@ public partial class MainWindow : Window
             File.AppendAllText($"{directory}-log.txt", $"{exception.Data}\n{exception.Message} \n {exception.StackTrace}");
             throw;
         }
+
+        Lab.Content = "Сохранены файлы!";
+    }
+
+    private void Button_Click_3(object sender, RoutedEventArgs e)
+    {
+        DirectoryInfo hdDirectoryInWhichToSearch = new DirectoryInfo(Environment.CurrentDirectory);
+        DirectoryInfo[] dirsInDir = hdDirectoryInWhichToSearch.GetDirectories("*" + "-gen");
+
+        foreach (DirectoryInfo dir in dirsInDir)
+        {
+            if (Directory.Exists(dir.FullName))
+            {
+                Directory.Delete(dir.FullName, true);
+            }
+        }
+
+        Lab.Content = "Удалены созданные файлы!";
+    }
+
+    private void Button_Click_Clear(object sender, RoutedEventArgs e)
+    {
+        _guid = "Guid generator \n";
     }
 }
 
